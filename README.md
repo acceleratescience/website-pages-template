@@ -51,6 +51,7 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
+    <li><a href="#howrun">How to Run</a></li>
     <li><a href="#prerequisites">Prerequisites</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -75,6 +76,28 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## How to Run
+
+You can simply copy the git repository and install the dependencies with pip:
+```
+pip install -r requirements.txt
+```
+
+Or you can use Docker. Pull the image from the Accelerate Science Docker Hub repository:
+```
+docker pull acceleratescience/website-pages-template
+```
+To enter the container, run
+```
+docker run -it -p 8080:8080 website-pages-template /bin/bash
+```
+
+I suggest using the VSCode Remote - Containers extension to develop in the container. This will allow you to use the VSCode editor on your local machine while running the code in the container.
+
+To serve locally, run
+```
+mkdocs serve
+```
 
 <!-- GETTING STARTED -->
 ## Prerequisites

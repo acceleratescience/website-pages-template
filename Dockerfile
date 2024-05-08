@@ -1,4 +1,4 @@
-FROM ubuntu:24.04
+FROM ubuntu:22.04
 LABEL container="website-pages"
 LABEL maintainer="Ryan Daniels"
 LABEL version="0.1.0"
@@ -11,6 +11,9 @@ COPY . /workspace
 # Install dependencies
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y git
+    apt-get install -y git python3 python3-pip
 
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
+
+EXPOSE 8080
+CMD ["mkdocs", "serve"]
