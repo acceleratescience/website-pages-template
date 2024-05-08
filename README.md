@@ -78,7 +78,7 @@
 
 ## How to Run
 
-You can simply copy the git repository and install the dependencies with pip:
+You can simply copy the git repository and install the dependencies with pip in a virtual environment:
 ```
 pip install -r requirements.txt
 ```
