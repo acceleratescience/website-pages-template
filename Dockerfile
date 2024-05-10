@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
 LABEL container="website-pages"
 LABEL maintainer="Ryan Daniels"
-LABEL version="0.2.0"
+LABEL version="0.3.0"
 LABEL description="Dockerfile template for mkdocs material theme site for accelerate."
 
 WORKDIR /workspace
